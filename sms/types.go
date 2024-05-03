@@ -33,6 +33,7 @@ type OrderSMSResponse struct {
 	Type        string `json:"type"`
 	CC          string `json:"cc"`
 	PhoneNumber string `json:"phonenumber"`
+	Number      int    `json:"number"`
 	OrderID     string `json:"order_id"`
 	Country     string `json:"country"`
 	Service     string `json:"service"`
