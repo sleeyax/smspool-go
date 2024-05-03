@@ -6,16 +6,18 @@ $ go get github.com/sleeyax/smspool-go
 ```
 
 ## Usage
+
 ```go
 package main
 
 import (
-    "fmt"
-    "github.com/sleeyax/smspool-go/sms"
+	"fmt"
+	"github.com/sleeyax/smspool-go/sms"
+	"log"
 )
 
 func main() {
-    pool := sms.Create("YOUR_API_KEY")
+	pool := sms.Create("YOUR_API_KEY")
 	order, err := pool.OrderSMS(sms.OrderSMSRequest{
 		Country: "US",
 		Service: "example",
