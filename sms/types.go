@@ -124,7 +124,7 @@ type Order struct {
 	//  The status of the SMS request.
 	Status OrderStatus `json:"status"`
 	// The pool associated with the SMS request.
-	Pool string `json:"pool"`
+	Pool int `json:"pool"`
 	// The timestamp of the SMS request.
 	Timestamp string `json:"timestamp"`
 	// The completion date of the SMS request.
