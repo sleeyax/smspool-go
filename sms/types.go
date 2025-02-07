@@ -30,20 +30,20 @@ type OrderSMSResponse struct {
 	Pools             map[string]Pool `json:"pools"`
 	Errors            []Error         `json:"errors"`
 	// Error type.
-	Type        string `json:"type"`
-	CC          string `json:"cc"`
-	PhoneNumber string `json:"phonenumber"`
-	Number      int    `json:"number"`
-	OrderID     string `json:"order_id"`
-	Country     string `json:"country"`
-	Service     string `json:"service"`
-	Pool        int    `json:"pool"`
-	ExpiresIn   int    `json:"expires_in"`
-	Expiration  int    `json:"expiration"`
-	Cost        string `json:"cost"`
-	CostInCents int    `json:"cost_in_cents"`
-	URL         string `json:"url"`
-	Token       string `json:"token"`
+	Type        string  `json:"type"`
+	CC          string  `json:"cc"`
+	PhoneNumber string  `json:"phonenumber"`
+	Number      int     `json:"number"`
+	OrderID     string  `json:"order_id"`
+	Country     string  `json:"country"`
+	Service     string  `json:"service"`
+	Pool        int     `json:"pool"`
+	ExpiresIn   int     `json:"expires_in"`
+	Expiration  int     `json:"expiration"`
+	Cost        string  `json:"cost"`
+	CostInCents float64 `json:"cost_in_cents"`
+	URL         string  `json:"url"`
+	Token       string  `json:"token"`
 }
 
 type Error struct {
